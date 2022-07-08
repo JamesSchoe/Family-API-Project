@@ -1,4 +1,4 @@
-document.querySelector('button').addEventListener('click',readInput)
+document.querySelector('button').addEventListener('click', readInput)
 
 async function readInput(){
     const name = document.querySelector('input').value
@@ -7,7 +7,7 @@ async function readInput(){
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('h2').innerText = data
+        document.querySelector('h2').innerText = data.name
     }catch(error){
         console.log(error)
     }
