@@ -70,10 +70,6 @@ app.get('/', (req, res)=> {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get('/js/main.js', (req, res)=> {
-    res.sendFile(__dirname + '/js' + '/index.html')
-})
-
 app.get('/api/:name', (req, res)=>{
     const familyName = req.params.name.toLowerCase();
     if (familyMembers[familyName]){
