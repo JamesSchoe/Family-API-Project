@@ -9,7 +9,7 @@ async function readInput(){
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('h2').innerText = data
+        document.querySelector('h2').innerText = [...data]
     }catch(error){
         console.log(error)
     }
