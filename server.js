@@ -4,6 +4,8 @@ const cors = require('cors');
 const PORT = 8000;
 
 app.use(cors());
+app.use(express.static(__dirname))
+
 
 const familyMembers = {
     'jim':{
