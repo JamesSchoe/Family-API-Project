@@ -1,3 +1,5 @@
+console.log('this link is fine');
+
 document.querySelector('button').addEventListener('click', readInput)
 
 async function readInput(){
